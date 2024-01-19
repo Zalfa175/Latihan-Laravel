@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,48 +15,56 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home', function () {
-    return view('home');
-});
+// Route::get('/home', function () {
+//     return view('home');
+// });
 
-Route::get('/about', function () {
-    return view('about');
-});
+// Route::get('/about', function () {
+//     return view('about');
+// });
 
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
-Route::get('/login', function () {
+// Route::get('/login', function () {
 
-    $nama = 'Nabila Zalfa Anandita';
+//     $nama = 'Nabila Zalfa Anandita';
 
-    $lampu = 1;
+//     $lampu = 1;
 
-    $kelas = env('KELAS', "Data Tidak Ada"); //di belakang koma adalah isi dari env yang tidak ada isinya
+//     $kelas = env('KELAS', "Data Tidak Ada"); //di belakang koma adalah isi dari env yang tidak ada isinya
 
-    $nilai = 'B';
+//     $nilai = 'B';
 
-    $perulangan_for = 100;
+//     $perulangan_for = 100;
 
-    $hobi_banyak = [
-        'Bermain Bola',
-        'Badminton',
-        'Renang',
-        'Bersepeda',
-        'Jogging'
-    ];
+//     $hobi_banyak = [
+//         'Bermain Bola',
+//         'Badminton',
+//         'Renang',
+//         'Bersepeda',
+//         'Jogging'
+//     ];
 
-    return view('admin.login', [
-        'nama' => $nama,
-        'lampu' => $lampu,
-        'kelas' => $kelas,
-        'nilai' => $nilai,
-        'limit' => $perulangan_for,
-        'hobbies' => $hobi_banyak,
-    ]);
-});
+//     return view('admin.login', [
+//         'nama' => $nama,
+//         'lampu' => $lampu,
+//         'kelas' => $kelas,
+//         'nilai' => $nilai,
+//         'limit' => $perulangan_for,
+//         'hobbies' => $hobi_banyak,
+//     ]);
+// });
+
+Route::get('/home1', [HomeController::class, 'index']);
+
+Route::get('/about1', [HomeController::class, 'about1']);
+
+Route::get('/test', [HomeController::class, 'test']);
+
+Route::get('/test/{id}', [HomeController::class, 'test']);
