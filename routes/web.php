@@ -15,9 +15,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/home', function () {
 //     return view('home');
@@ -65,6 +65,8 @@ Route::get('/home1', [HomeController::class, 'index']);
 
 Route::get('/about1', [HomeController::class, 'about1']);
 
-Route::get('/test', [HomeController::class, 'test']);
+Route::get('/add', [HomeController::class, 'tambah']);
 
-Route::get('/test/{id}', [HomeController::class, 'test']);
+Route::post('/save', [HomeController::class, 'simpan']);
+
+Route::get('/test', [HomeController::class, 'test']);

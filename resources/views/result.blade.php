@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <title>Document</title>
 </head>
 <body>
-    
+    <p>Nama Makanan : {{ $nama }}</p>
+    <p>Kategori Makanan : {{ $kategori }}</p>
+    <p>Harga Makanan : {{ $harga }}</p>
+    <p>Keterangan : {{ $ket }}</p>
 </body>
 </html>
