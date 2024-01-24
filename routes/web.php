@@ -69,4 +69,8 @@ Route::get('/add', [HomeController::class, 'tambah']);
 
 Route::post('/save', [HomeController::class, 'simpan']);
 
-Route::get('/test', [HomeController::class, 'test']);
+Route::get('/makanan', [HomeController::class, 'view_makanan']);
+
+Route::get('/test_query_builder', [HomeController::class, 'test_query_builder']);
+
+Route::get('/test_eloquent', [HomeController::class, 'test_eloquent']);
