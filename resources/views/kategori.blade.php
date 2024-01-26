@@ -1,7 +1,7 @@
 @extends('template.index')
 
-@section('title', 'Home')
+@section('title', 'Kategori')
 
 @section('content')
-    <h2>Home</h2>
+    <h2>Halaman Kategori</h2>
 @endsection
