@@ -13,6 +13,8 @@ class Kategori extends Model
     
     protected $primaryKey = 'kode_kategoris';
 
+    Protected $keyType = 'string';
+
     protected $fillable = [
         'kode_kategoris',
         'nama',
