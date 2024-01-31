@@ -20,6 +20,10 @@ use App\Http\Controllers\KategoriController;
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/menu', [MenuController::class, 'index']);
+Route::get('/menu/add', [MenuController::class, 'add']);
+Route::post('/menu/save', [MenuController::class, 'save']);
+Route::get('/menu/{id}/edit', [MenuController::class, 'edit']);
+Route::get('/menu/{id}/delete', [MenuController::class, 'delete']);
 
 Route::get('/kategori', [KategoriController::class, 'index']);
 Route::get('/kategori/add', [KategoriController::class, 'add']);
