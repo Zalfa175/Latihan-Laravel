@@ -10,8 +10,6 @@ use Illuminate\Support\Facades\DB;
 //Eloquent
 use App\Models\Makanan;
 
-use App\Models\Kategori;
-
 class MenuController extends Controller
 {
     public function index()

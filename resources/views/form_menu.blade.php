@@ -24,11 +24,7 @@
 
                     <div class="mb-3">
                       <label for="kategori" class="form-label">Kategori</label>
-                      <select name="kategori" class="form-select form-select-sm" aria-label="Small select example">
-                        @foreach ($kategori as $data)
-                        <option value="1">One</option>
-                        @endforeach
-                      </select>
+                      <input type="text" class="form-control" id="kategori" name="kategori" value="{{ @$data->kategori }}">
                     </div>
                     
                     <div class="mb-3">
