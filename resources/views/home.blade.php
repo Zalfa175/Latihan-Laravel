@@ -3,7 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid bg-success-subtle pb-5">
         <div class="row">
             <div class="col-12 mt-4">
                 <h2 class="text-center mb-4">WELCOME TO OUR RESTAURANT</h2>

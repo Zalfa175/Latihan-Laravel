@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid bg-success">
   <div class="row">
     <div class="col-12">
       <footer class="py-3 my-4">
