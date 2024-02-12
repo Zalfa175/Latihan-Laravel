@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <div class="container-fluid bg-success-subtle">
+    <div class="container-fluid bg-success-subtle my-5">
         <div class="row">
             <div class="col-12">
                 <form action="/menu/save" method="POST">

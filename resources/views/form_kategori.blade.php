@@ -4,7 +4,7 @@
 
 @section('content')
     
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col-12">
                 <form action="/kategori/save" method="POST">
@@ -12,7 +12,7 @@
                     @isset($data)
                         <input type="hidden" name="old_kode" value="{{ @$data->kode_kategoris }}">
                     @endisset
-                    <div class="mb-3">
+                    <div class="my-3">
                       <label for="kode" class="form-label">Kode</label>
                       <input type="text" class="form-control" id="kode" name="kode" value="{{ @$data->kode_kategoris }}">
                     </div>
